@@ -1,0 +1,51 @@
+/*GENERALES*/
+ul{
+        list-style: none;
+        display: inline-flex;
+        width: 100%;
+}
+a {
+        text-decoration: none;
+        color: black;
+}
+li {
+        margin-right: 30px;
+}
+/*article{
+            display: none;
+}*/
+h1{
+    font-weight: bolder;
+    font-style: italic;
+}
+h3 {
+        padding-bottom: 30px;
+}
+
+/*HEADER*/
+header > ul{
+                justify-content: flex-end;
+                background-color: midnightblue;
+}
+header >ul >li >a {
+                    color: white;
+}
+header >ul >li >a:hover {
+                    font-size: larger;
+                    font-weight: bolder;
+                    color: cornflowerblue;
+}
+
+/*TITULO PRINCIPAL*/
+#tittle {
+            text-align: center;
+            color: midnightblue;
+}
+
+/*SEGUNDA BARRA / DISCIPLINAS*/
+#disciplinas {
+                text-align: center;
+}
+#disciplinas >ul {
+                    justify-content: space-evenly;
+}
