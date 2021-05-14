@@ -26,12 +26,13 @@ h3 {
 header > ul{
                 justify-content: flex-end;
                 background-color: midnightblue;
+                padding: 10px;
 }
 header >ul >li >a {
                     color: white;
 }
 header >ul >li >a:hover {
-                    font-size: larger;
+                    font-size: large;
                     font-weight: bolder;
                     color: cornflowerblue;
 }
@@ -48,4 +49,127 @@ header >ul >li >a:hover {
 }
 #disciplinas >ul {
                     justify-content: space-evenly;
+                    margin-bottom: 30px;
+}
+
+/*ARTICULOS DE DEPORTE*/
+article >img {
+                box-shadow: 5px 5px 15px black;
+}
+article >h5 {
+                font-style: oblique;
+                font-weight: bold;
+                margin-bottom: 20px;
+}
+
+/*TABLA DE HORARIOS*/
+#tablaHora{
+                text-align: center;
+                padding: 20px;
+}
+table {
+                display: inline;
+                margin: 0px;
+}
+th, td {
+                border-spacing: 2px;
+                border-width: medium;
+                border-color: midnightblue;
+                border-collapse: collapse;
+                padding: 7px;
+                width: 20%;
+}
+#tablaHora >article {
+                        text-align: left;
+}
+td >a:hover {
+                color: midnightblue;
+                font-weight: bold;       
+}
+
+/*CLASSES PARA BOTONES*/
+.miBoton { 
+                background-color: midnightblue; 
+                padding: 5px; 
+                box-sizing: border-box; 
+                border: none; 
+                outline: none; 
+                position: relative; 
+                color: white;
+} 
+.miBoton:hover {
+                        color: midnightblue; 
+                        background-color: white;
+} 
+.miBoton.styleOne::before{ 
+        content: ''; 
+        position: absolute; 
+        top: 0px; 
+        left: 0px; 
+        right: 0px; 
+        bottom: 0px; 
+        z-index: -1; 
+        /* Se convierte en el background está una capa mas alejado del usuarios*/
+        border: 2px solid midnightblue; 
+        transition: top, left, right, bottom, 200ms ease-in-out; 
+} 
+.miBoton.styleOne:hover::before{ 
+                                        top: -4px; 
+                                        left: -4px; 
+                                        right: -4px; 
+                                        bottom: -4px; 
+}
+.miBoton.styleTwo::before{ 
+                                content: ''; 
+                                position: absolute; 
+                                top: 0px; 
+                                left: 0px; 
+                                right: 0px; 
+                                bottom: 0px; 
+                                z-index: -1; 
+                                background-color: gold; 
+                                transition: 300ms ease-in-out; 
+                                transform: scaleX(0); 
+                                transform-origin: left; 
+} 
+.miBoton.styleTwo:hover::before{       
+                                        transform: scaleX(1); 
+}
+.miBoton.styleTwo { 
+                        z-index: 1; 
+} 
+/*
+.miBoton.styleThree::before{ 
+        content: ''; 
+        position: absolute; 
+        top: 0px; 
+        left: 0px; 
+        right: 0px; 
+        bottom: 0px; 
+        z-index: -1; 
+        background-color: darkgray; 
+        border-radius: 40%; 
+        transition: transform 500ms ease-in-out; 
+        transform: scale(1.5); 
+       } 
+       .miBoton.styleThree:hover::before{ transform:scale(0); } 
+.miBoton.styleThree{ 
+        z-index: 1; 
+        overflow: hidden; 
+        background-color: rgba(8, 79, 233, 0.849); 
+       } 
+*/
+
+/*CLASES*/
+.oculta {
+                display: none;
+}
+.visible {
+                display: block;
+}
+.noOpaca{
+                opacity: 0;
+}
+.opaca {
+                opacity: 1;
 }
