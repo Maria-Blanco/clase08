@@ -6,8 +6,6 @@ window.addEventListener('scroll', function(){
     let anchoPantalla = window.innerWidth;
     console.log ('el tamano de la pantalla es:' + altoPantalla + 'x' + anchoPantalla);
 
-    
-
     let articulosScroll = document.querySelectorAll('#disciplinas article');
     let cantidadscroll = articulosScroll.length; 
                 console.log ('Cantidad de boton: ' + cantidadscroll);

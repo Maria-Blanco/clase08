@@ -172,7 +172,6 @@ td >a:hover {
 }
 .noOpaca{
                 opacity: 0;
-                animation: boing 2s ease-in-out;
 }
 .opaca {
                 opacity: 1;
