@@ -99,7 +99,7 @@ td >a:hover {
 } 
 .miBoton:hover {
                         color: midnightblue; 
-                        background-color: white;
+                        background-color: rgba(255, 255, 255, 0);
 } 
 .miBoton.styleOne::before{ 
         content: ''; 
@@ -138,27 +138,30 @@ td >a:hover {
 .miBoton.styleTwo { 
                         z-index: 1; 
 } 
-/*
 .miBoton.styleThree::before{ 
-        content: ''; 
-        position: absolute; 
-        top: 0px; 
-        left: 0px; 
-        right: 0px; 
-        bottom: 0px; 
-        z-index: -1; 
-        background-color: darkgray; 
-        border-radius: 40%; 
-        transition: transform 500ms ease-in-out; 
-        transform: scale(1.5); 
-       } 
-       .miBoton.styleThree:hover::before{ transform:scale(0); } 
+                                content: ''; 
+                                position: absolute; 
+                                top: 0px; 
+                                left: 0px; 
+                                right: 0px; 
+                                bottom: 0px; 
+                                z-index: -1; 
+                                background-color: midnightblue; 
+                                border-radius: 40%; 
+                                transition: transform 500ms ease-in-out; 
+                                transform: scale(1.5); 
+} 
+.miBoton.styleThree:hover::before{ 
+                                        transform:scale(0); 
+} 
 .miBoton.styleThree{ 
-        z-index: 1; 
-        overflow: hidden; 
-        background-color: rgba(8, 79, 233, 0.849); 
-       } 
-*/
+                        z-index: 1; 
+                        overflow: hidden; 
+                        background-color: midnightblue; 
+} 
+.miBoton.styleThree:hover{
+                                background-color: gold; 
+}
 
 /*CLASES*/
 .oculta {
@@ -169,7 +172,22 @@ td >a:hover {
 }
 .noOpaca{
                 opacity: 0;
+                animation: boing 2s ease-in-out;
 }
 .opaca {
                 opacity: 1;
+}
+.escalar {
+                animation: boing 2s ease-in-out;
+}
+
+/*KEYFRAMES*/
+
+@keyframes boing {
+        0% {
+                transform: scale(1.5)
+        };
+        100% {
+                transform: scale(1)
+    };
 }

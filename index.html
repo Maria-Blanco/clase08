@@ -55,12 +55,12 @@
             </h3>
             <ul>
                 <li>
-                    <a href="#atle" class="miBoton styleOne styleTwo">
+                    <a href="#atle" class="miBoton styleOne ">
                         Atletismo
                     </a>
                 </li>
                 <li>
-                    <a href="#cicl" class="miBoton styleOne styleTwo ">
+                    <a href="#cicl" class="miBoton styleOne  ">
                         Ciclismo
                     </a>
                 </li>
@@ -70,22 +70,22 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#judo" class="miBoton styleOne styleTwo">
+                    <a href="#judo" class="miBoton  styleTwo">
                         Judo
                     </a>
                 </li>
                 <li>
-                    <a href="#hand" class="miBoton styleOne styleTwo ">
+                    <a href="#hand" class="miBoton  styleTwo ">
                         Handball
                     </a>
                 </li>
                 <li>
-                    <a href="#tria" class="miBoton styleOne styleTwo">
+                    <a href="#tria" class="miBoton styleThree">
                         Triatlón
                     </a>
                 </li>
                 <li>
-                    <a href="#nata" class="miBoton styleOne styleTwo">
+                    <a href="#nata" class="miBoton styleThree">
                         Natación
                     </a>
                 </li>
@@ -338,14 +338,17 @@
                                     if (detallesboton[k].classList.contains('opaca')){
                                         detallesboton[k].classList.remove('opaca');
                                         detallesboton[k].classList.add('noOpaca');
-                                    }   
-                                }
+                                        //detallesboton[k].classList.add('escalar');
+                                    };
+                                
                 if (detallesboton[j].classList.contains('noOpaca')){
                     detallesboton[j].classList.remove('noOpaca');
                                 }
                                 detallesboton[j].classList.add('opaca');
                             };
                         };
+                    };
+
            /*TABLA DETALLES*/ 
                 var detallesEvento = document.querySelectorAll('#tablaHora article');
                 let cantidadItem = detallesEvento.length; 
