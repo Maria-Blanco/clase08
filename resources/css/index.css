@@ -34,7 +34,7 @@ header >ul >li >a {
 header >ul >li >a:hover {
                     font-size: large;
                     font-weight: bolder;
-                    color: cornflowerblue;
+                    color: gold;
 }
 
 /*TITULO PRINCIPAL*/
@@ -110,7 +110,7 @@ td >a:hover {
         bottom: 0px; 
         z-index: -1; 
         /* Se convierte en el background está una capa mas alejado del usuarios*/
-        border: 2px solid midnightblue; 
+        border: 2px solid gold; 
         transition: top, left, right, bottom, 200ms ease-in-out; 
 } 
 .miBoton.styleOne:hover::before{ 
@@ -128,7 +128,7 @@ td >a:hover {
                                 bottom: 0px; 
                                 z-index: -1; 
                                 background-color: gold; 
-                                transition: 300ms ease-in-out; 
+                                transition: transform 300ms ease-in-out; 
                                 transform: scaleX(0); 
                                 transform-origin: left; 
 } 
@@ -162,6 +162,18 @@ td >a:hover {
 .miBoton.styleThree:hover{
                                 background-color: gold; 
 }
+.miBoton.styleFour::before{ 
+        content: ''; 
+        position: absolute; 
+        left: 0; 
+        right: 0; 
+        bottom: 0; 
+        height: 2px; 
+        background-color: gold; 
+        transition: transform 300ms ease-in-out; 
+        transform: scaleX(0); 
+       } 
+.miBoton.styleFour:hover::before{ transform: scaleX(1); } 
 
 /*CLASES*/
 .oculta {
